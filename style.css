@@ -1,0 +1,51 @@
+body {
+    color:black;
+    font-family: Tahoma, sans-serif;
+    background-color: rgb(177, 218, 218);
+}
+
+h2 {
+    font-family: Tahoma, sans-serif;
+}
+
+.project {
+    background-color: rgb(255, 241, 195);
+    margin: 4%;
+    padding: 3%;
+    padding-top:1%;
+}
+
+.pagedescription {
+    margin: 4%;
+    margin-top:2%;
+}
+
+video {
+    margin: 3%;
+}
+
+.menu {
+    margin-left:4%;
+    margin-right:4%;
+}
+
+a:link {
+    color:teal;
+}
+
+a:visited {
+    color:teal;
+}
+
+a:hover {
+    color:tomato;
+}
+
+a:active {
+    color:tomato;
+}
+
+h4 {
+    font-weight:normal;
+    font-size:16px;
+}

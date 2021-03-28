@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dominic Olson's Projects</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class='menu'>
+            <h4><a href='index.html'>ABOUT</a> | PROJECTS | <a href='music.html'>MUSIC</a> | <a href='https://www.linkedin.com/in/domkolson/' target="_blank">LINKEDIN</a></h4>
+        </div>
+        <div class='pagedescription'>
+            <h1>Dominic Olson's Projects</h1>
+            <p>This page contains documentation of various projects I am working on or have completed, ranging from engineering, design, woodworking, and music technology.</p>
+        </div>
+        <div class='project'>
+            <h2>Micromouse | October 2020 - present</h2>
+            <p>I am a participant in UCLA IEEE's Micromouse project, in which I remotely collaborate with fellow UCLA student Jason Wu to create a small autonomous maze-solving robot. For our "mouse," we are currently using an STM32 microcontroller and circuits on a breadboard. We programmed in C using STM32CubeIDE to implement PID control and IR sensing, and we were able to successfully navigate through a track.</p>
+            <p>We designed breakout PCBs for IR sensing and motor control using Autodesk Eagle, had them manufactured, and assembled them using a soldering iron.</p>
+            <p>Since Micromouse is a year-long project, we have many goals that we are still working towards. Recently, we have been working on developing our maze solving algorithm, improving our continuous turning (without stopping), and implementing sensor fusion with IR and gyroscope data.</p>
+            <p>Shown below are the two breakout boards we designed for this project. I will update this page with more pictures and a video of our micromouse soon!</p>
+            <img src='breakoutboards.jpg' width=70%>
+        </div>
+
+        <div class='project'>
+            <h2>Handwriting Recognition with EmbeddedML on the SensorTile | February 2021 - March 2021</h2>
+            <p>This project is a device to identify written characters/symbols based on pen stroke motions. When the user writes a character, acceleration and angular velocity data is collected, and the motion is classified using a neural network. The system can recognize six simple distinct characters resembling capital "L" shapes and lines in certain directions. A potential application of this concept would be a stylus that does not require a specific writing surface and can be trained for the writing styles of different individuals. This project was my final project for UCLA's Engineering 96C class (Introduction to Engineering Design: Internet of Things).</p>
+            <div class='video'>
+                <h3>Video Demonstration</h3>
+                <iframe width="560" height="315" src='https://www.youtube.com/embed/A7Gu1VVNR3E' frameborder="0" allowfullscreen></iframe>
+        
+            </div>
+        </div>
+        <div class='project'>
+            <h2>To-Do Cue Queue (IDEAHacks) | January 2021</h2>
+            <p>This project is an internet connected checklist to improve organization and focus in a remote learning environment. It was designed and prototyped using an ESP32 microcontroller and an electronic circuit on a breadboard. An OLED display shows the list of tasks and a 7 segment display shows the number of tasks yet to be completed. An LED and piezo buzzer are used to beep when the user makes selections. An IR emitter/reciever pair are used to monitor how long the user has been in their seat and remind them to take a break. This project was designed at IDEAHacks 2021: Home Applications, a hardware hackathon hosted by UCLA IEEE.</p>
+            <a href='https://devpost.com/software/to-do-cue-queue'>Full Project Description</a>
+            <h3>Video Presentation and Demonstration</h3>
+            <iframe width="560" height="315" src='https://www.youtube.com/embed/_Wl1HXeh8NA' frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class='project'>
+            <h2>Recorder 3D Model | November 2020</h2>
+            <p>This project is a 3D model for a recorder (instrument) created in Autodesk Fusion 360. It is based on pre-existing technical drawings for a recorder. I am currently in the process of getting this project 3D printed.</p>
+            <img src='recorder3Dmodel.png' width=70%>
+        </div>
+
+        <div class='project'>
+            <h2>Side Table | January 2020 - March 2020</h2>
+            <p>This project is a work in progress that has been indefinitely postponed due to COVID-19/lack of access to tools to complete it. All of the necessary wood has been gathered and most of the individual pieces have been cut to size, but the table needs to be assembled, sanded, and finished. Shown below is a CAD drawing of it that I created in SketchUp.</p>
+            <img src='sidetable.png' width=70%>
+        </div>
+
+        <div class='project' id='plywoodbowls'>
+            <h2>Plywood Nesting Bowls | November 2019 - January 2020</h2>
+            <p>To create these two bowls, I used both traditional and CNC woodworking techniques. Before hand turning, the bowls were first assembled from concentric plywood rings cut using the CNC router (a test run of this process is depicted in the second photo). This method is less wasteful of wood compared to usual bowl turning, where the entire inside of the bowl needs to be hollowed out.</p>
+            <img src='plywoodbowls1.jpg' width=30%>
+            <img src='plywoodbowls2.jpg' width=30%>
+            <img src='plywoodbowls3.jpg' width=30%>
+            
+        </div>
+
+        <div class='project' id='musictechnology'>
+            <h2>Digital Audio Effects Pedal | July 2019</h2>
+            <p>This project is an effects pedal that I created at a summer workshop at Stanford’s CCRMA called Embedded DSP with Faust. It uses a Teensy microcontroller with an audio shield. The Teensy code was written in the Arduino language, and the signal processing algorithm was written in Faust. I made the box for this project using a laser cutter. Different programs can be loaded onto the Teensy using the USB to create different types of sounds. With the current program I am running, the pedal includes a flanger, low pass filter, and echo.</p>
+            <img src='pedal1.jpg' width=62.5%>
+            <img src='pedal2.jpg' width=35%>
+            <h3>Video Presentation and Demonstration</h3>
+            <iframe width="560" height="315" src='https://www.youtube.com/embed/7m9pvtlS1qo' frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class='project'>
+            <h2>Trumpet MIDI Controller | June 2019</h2>
+            <p>This project is a wind MIDI controller with buttons that change pitch similar to valves on a trumpet. The project features a wind (breath) sensor to control volume and a soft membrane potentiometer slide to shift pitch either continuously or discretely. I completed this project at the Designing Physical Interactions for Music workshop at Stanford University's Center for Computer Research in Music and Acoustics.</p>
+            <h3>Video Presentation and Demonstration</h3>
+            <iframe width="560" height="315" src='https://www.youtube.com/embed/HRshB6Xxbd8' frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class='project'>
+            <h2>Shelf | April 2019 - May 2019</h2>
+            <p>I designed this shelf in the CAD program Vectric Aspire and cut out the pieces using the CNC router. The shelf is made of plywood, and the pieces fit together using box joints, making this project very sturdy.</p>
+            <img src='shelf1.jpg' width=35%>
+            <img src='shelf2.jpg' width=35%>
+        </div>
+
+        <div class='project'>
+            <h2>Mancala | 2019</h2>
+            <p>This project was designed as a way to test my high school's new CNC router, and is my first project using this tool. I designed this project using the CAD program Vectric Aspire. The board is made of maple and mahogany.</p>
+            <img src='mancala.jpg' width=70%>
+        </div>
+
+        <div class='project'>
+            <h2>Bowls | 2018 - 2020</h2>
+            <p>Pictured are several bowls I turned on the lathe. The method for creating the plywood bowls is described in further detail <a href='projects.html#plywoodbowls'>here</a>.
+            </p>
+            <img src='bowls.jpg' width=62.5%>
+            <img src='bowlturning.jpg' width=35%>
+        </div>
+
+        <div class='project'>
+            <h2>Cutting Boards and Rolling Pin | 2018</h2>
+            <p>Pictured are an end-grain cutting board, simple cutting board, and rolling pin.</p>
+            <img src='cuttingboards.jpg' width=70%>
+        </div>
+
+        <div class='project'>
+            <h2>Tongue Drum | March 2018 - May 2018</h2>
+            <p>The tongue drum is a percussion instrument in which beams vibrate at certain frequencies to create tonal sounds. To design this instrument, I used the equation for the natural frequency of a cantilever beam to calculate the required ratios between the lengths of the beams to produce notes from the pentatonic scale.  The drum features a maple top to produce the tones, hickory sides, and a removable sliding cherry bottom to store mallets and make minor tuning adjustments.</p>
+            <img src='tonguedrum1.jpg' width=45%>
+            <img src='tonguedrum2.jpg' width=45%>
+            
+        </div>
+
+        <div class='project'>
+            <h2>Pens | October 2017 - December 2018</h2>
+            <p>Pens were my first lathe project. I made around 15 pens in my first year of woodshop class, many of which I gave as gifts to my family and friends. Six of them are shown below.</p>
+            <img src='pens.jpg' width=40%>
+        </div>
+
+    </body>
+</html>

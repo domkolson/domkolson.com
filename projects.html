@@ -10,15 +10,49 @@
         </div>
         <div class='pagedescription'>
             <h1>Dominic Olson's Projects</h1>
-            <p>This page contains documentation of various projects I am working on or have completed, ranging from engineering, design, woodworking, and music technology.</p>
+            <p>This page contains documentation of various projects I am working on or have completed, ranging from engineering, design, woodworking, and music technology. You may also want to check out my <a href='Dominic_Olson_Resume_Sep_2021.pdf' target="_blank">resume</a>.</p>
         </div>
+
+        <div class='project' id='mmlead'>
+            <h2>Micromouse Lead | May 2021 - present</h2>
+            <p>I am co-leading IEEE at UCLA's Micromouse project in the 2021-2022 school year, where I will instruct and mentor students as they design and program small autonomous maze-solving robots. I designed a PCB for students to use in the first quarter of the program to learn about the needed circuits and practice soldering and programming.</p>
+                
+            <p>The PCB has circuits for voltage regulation, motor control, and IR sensing, as well as headers to plug in an STM32 Nucleo microcontroller. This design is an improvement from ones from previous years because it features space for battery holders, a programming header, and a UART header to connect to an additional breakout board.</p>
+            <p><a href='projects.html#mm'>Previous Micromouse Work</a></p>
+            <img src='micromouse_boards.jpg' width=40%>
+            <img src='mm3D.png' width=40%>
+        </div>
+
         <div class='project'>
-            <h2>Micromouse | October 2020 - present</h2>
-            <p>I am a participant in UCLA IEEE's Micromouse project, in which I remotely collaborate with fellow UCLA student Jason Wu to create a small autonomous maze-solving robot. For our "mouse," we are currently using an STM32 microcontroller and circuits on a breadboard. We programmed in C using STM32CubeIDE to implement PID control and IR sensing, and we were able to successfully navigate through a track.</p>
-            <p>We designed breakout PCBs for IR sensing and motor control using Autodesk Eagle, had them manufactured, and assembled them using a soldering iron.</p>
-            <p>Since Micromouse is a year-long project, we have many goals that we are still working towards. Recently, we have been working on developing our maze solving algorithm, improving our continuous turning (without stopping), and implementing sensor fusion with IR and gyroscope data.</p>
-            <p>Shown below are the two breakout boards we designed for this project. I will update this page with more pictures and a video of our micromouse soon!</p>
-            <img src='breakoutboards.jpg' width=70%>
+            <h2>Budgie | June 2021 - August 2021</h2>
+            <p>Budgie is a rhythm game for music education developed by me, Trevor Guo, Andrew Gautier, Getty George V, and Raymond Song as part of the BruinLabs entrepreneurship competition. The project features a physical shaker device that connects to a mobile app to provide feedback on the accuracy of the rhythm being played. Budgie aims to provide a hands-on, tactile experience for music students practicing rhythm.</p>
+            <p>As the team's electrical engineer, I designed the circuit to connect the microcontroller, gyroscope, charger, and other components together, and to control the vibrational motors and LEDs. I wrote the Arduino code for the ESP32 Microcontroller, including processing the signal from the gyroscope and connecting to the phone using Bluetooth Low Energy. Additionally, I was responsible for assembling and testing the physical product, which involved lots of soldering and 3D printing.</p>
+            <p>Budgie recieved an Honorable Mention award at the BruinLabs Demo Day.</p>
+            <p><a href='https://pitchdeck.figmatic.com/slides/ksbc38di07561?token=TkkrbjhZW2tvbUdWcGs%3D' target="_blank">Slide Deck</a></p>
+            <p><a href='https://github.com/TrevorGuo/Budgie' target="_blank"> Code Repository</a> (I contributed the Arduino code)</p>
+            <div class='video'>
+                <h3>Video Demonstration</h3>
+                <iframe width="560" height="315" src='https://www.youtube.com/embed/usup_jfuutA' frameborder="0" allowfullscreen></iframe>
+        
+            </div>
+        </div>
+
+        <div class='project'>
+            <h2>Line Following Car | May 2021 - June 2021</h2>
+            <p>In this final project for UCLA's Introduction to Electrical Engineering class, I implemented IR sensor fusion and PID control to program the small robot car to follow a curved path. Additionally, I wrote a C++ library to use quadrature encoders to distinguish forward and backward motor rotation. My car completed the path fastest out of 107 students in the class.</p>
+            <div class='video'>
+                <h3>Video Demonstration</h3>
+                <iframe width="560" height="315" src='https://www.youtube.com/embed/GDU-UIU7CtQ' frameborder="0" allowfullscreen></iframe>
+        
+            </div>
+        </div>
+
+        <div class='project' id='mm'>
+            <h2>Micromouse | October 2020 - May 2021</h2>
+            <p>I participated in UCLA IEEE's Micromouse project, in which I remotely collaborated with fellow UCLA student Jason Wu to create a small autonomous maze-solving robot. We designed breakout PCBs for motor control and IR sensing using Autodesk Eagle and implemented PID Control and the Floodfill maze solving algorithm in C on an STM32 microcontroller. We further improved our mouse by adding a gyroscope and bluetooth module. Our mouse first place at UCLA’s All America Micromouse Competition in May 2021 by solving a maze the fastest.</p>
+            <p>I am continuing my Micromouse journey by co-leading the project for the 2021-2022 school year, teaching and mentoring next year’s Micromouse students. This role also involves some <a href='projects.html#mmlead'>technical work</a>.</p>
+            <img src='micromouse.jpg' width=40%>
+            <img src='breakoutboards.jpg' width=40%>
         </div>
 
         <div class='project'>
@@ -33,7 +67,7 @@
         <div class='project'>
             <h2>To-Do Cue Queue (IDEAHacks) | January 2021</h2>
             <p>This project is an internet connected checklist to improve organization and focus in a remote learning environment. It was designed and prototyped using an ESP32 microcontroller and an electronic circuit on a breadboard. An OLED display shows the list of tasks and a 7 segment display shows the number of tasks yet to be completed. An LED and piezo buzzer are used to beep when the user makes selections. An IR emitter/reciever pair are used to monitor how long the user has been in their seat and remind them to take a break. This project was designed at IDEAHacks 2021: Home Applications, a hardware hackathon hosted by UCLA IEEE.</p>
-            <a href='https://devpost.com/software/to-do-cue-queue'>Full Project Description</a>
+            <p><a href='https://devpost.com/software/to-do-cue-queue'>Full Project Description</a></p>
             <h3>Video Presentation and Demonstration</h3>
             <iframe width="560" height="315" src='https://www.youtube.com/embed/_Wl1HXeh8NA' frameborder="0" allowfullscreen></iframe>
         </div>
